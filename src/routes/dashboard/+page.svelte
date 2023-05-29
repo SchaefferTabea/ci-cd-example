@@ -41,7 +41,7 @@
 								action="?/delete&slug={post.slug}"
 								use:enhance
 							>
-								<button class="btn variant-soft-error" type="submit">
+								<button class="variant-soft-error btn" type="submit">
 									Delete
 								</button>
 							</form>
