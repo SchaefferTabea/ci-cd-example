@@ -1,5 +1,5 @@
-import * as posts from '$lib/services/posts'
+import * as posts from '$lib/services/posts';
 
 export const load = async () => {
-	return { posts: posts.getPublishedPosts() }
-}
+	return { posts: posts.getPublishedPosts() };
+};

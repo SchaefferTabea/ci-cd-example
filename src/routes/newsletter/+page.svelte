@@ -1,5 +1,5 @@
 <script>
-	import { enhance } from '$app/forms'
+	import { enhance } from '$app/forms';
 </script>
 
 <main class="container mt-32">
@@ -9,9 +9,7 @@
 		<form method="POST" action="?/subscribe" use:enhance>
 			<div class="flex gap-2">
 				<input class="input" type="email" name="email" />
-				<button class="btn variant-filled-primary" type="submit">
-					Subscribe
-				</button>
+				<button class="btn variant-filled-primary" type="submit"> Subscribe </button>
 			</div>
 		</form>
 	</div>

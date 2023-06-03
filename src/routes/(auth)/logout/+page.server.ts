@@ -1,14 +1,14 @@
-import { fail, redirect } from '@sveltejs/kit'
-import { auth } from '$lib/server/auth'
+import { fail, redirect } from '@sveltejs/kit';
+import { auth } from '$lib/server/auth';
 
 export const actions = {
 	default: async ({ locals }) => {
-		const session = await locals.validate()
-		if (!session) return fail(401)
+		const session = await locals.validate();
+		if (!session) return fail(401);
 
-		await auth.invalidateSession(session.sessionId)
-		locals.setSession(null)
+		await auth.invalidateSession(session.sessionId);
+		locals.setSession(null);
 
-		throw redirect(303, '/')
+		throw redirect(303, '/');
 	},
-}
+};

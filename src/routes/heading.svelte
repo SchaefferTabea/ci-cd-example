@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { enhance } from '$app/forms'
-	import { getUser } from '@lucia-auth/sveltekit/client'
-	import { LightSwitch } from '@skeletonlabs/skeleton'
+	import { enhance } from '$app/forms';
+	import { getUser } from '@lucia-auth/sveltekit/client';
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 
-	const user = getUser()
+	const user = getUser();
 </script>
 
 <nav class="container mt-8 flex justify-between">

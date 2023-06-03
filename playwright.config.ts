@@ -1,4 +1,4 @@
-import type { PlaywrightTestConfig } from '@playwright/test'
+import type { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
 	webServer: {
@@ -9,6 +9,6 @@ const config: PlaywrightTestConfig = {
 		baseURL: process.env.TEST_BASE_URL || 'http://localhost:4173',
 	},
 	testDir: 'tests',
-}
+};
 
-export default config
+export default config;

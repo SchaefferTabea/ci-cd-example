@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Editor from '@toast-ui/editor'
-	import '@toast-ui/editor/dist/toastui-editor.css'
+	import Editor from '@toast-ui/editor';
+	import '@toast-ui/editor/dist/toastui-editor.css';
 
-	export let markdown: string
+	export let markdown: string;
 
-	let loading = false
+	let loading = false;
 
 	function editor(el: HTMLDivElement) {
 		const editor = new Editor({
@@ -15,13 +15,13 @@
 			previewStyle: 'tab',
 			events: {
 				change: () => {
-					markdown = editor.getMarkdown()
+					markdown = editor.getMarkdown();
 				},
 				load: () => {
-					loading = false
+					loading = false;
 				},
 			},
-		})
+		});
 	}
 </script>
 

@@ -1,7 +1,7 @@
 <script lang="ts">
-	import Form from '$lib/components/forms/post.svelte'
+	import Form from '$lib/components/forms/post.svelte';
 
-	export let data
+	export let data;
 </script>
 
 <div class="container mt-32">

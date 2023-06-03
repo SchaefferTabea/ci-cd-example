@@ -23,22 +23,13 @@
 
 			<ol class="space-y-4">
 				<li>
-					<a class="unstyled muted" href="https://twitter.com/joyofcodedev">
-						Twitter
-					</a>
+					<a class="unstyled muted" href="https://twitter.com/joyofcodedev"> Twitter </a>
 				</li>
 				<li>
-					<a
-						class="unstyled muted"
-						href="https://www.youtube.com/@joyofcodedev"
-					>
-						YouTube
-					</a>
+					<a class="unstyled muted" href="https://www.youtube.com/@joyofcodedev"> YouTube </a>
 				</li>
 				<li>
-					<a class="unstyled muted" href="https://github.com/mattcroat">
-						GitHub
-					</a>
+					<a class="unstyled muted" href="https://github.com/mattcroat"> GitHub </a>
 				</li>
 			</ol>
 		</nav>

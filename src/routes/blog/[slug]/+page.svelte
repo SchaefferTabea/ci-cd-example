@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let data
+	export let data;
 </script>
 
 <div class="container mt-32">

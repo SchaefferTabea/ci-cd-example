@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { date } from '$lib/utils'
+	import { date } from '$lib/utils';
 
-	export let data
+	export let data;
 </script>
 
 <main class="container mt-32">
@@ -12,10 +12,7 @@
 			<ol>
 				<li>
 					<h3>
-						<a
-							class="unstyled font-semibold capitalize text-primary-500"
-							href="/blog/{post.slug}"
-						>
+						<a class="unstyled font-semibold capitalize text-primary-500" href="/blog/{post.slug}">
 							{post.title}
 						</a>
 					</h3>
