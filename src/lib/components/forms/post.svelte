@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { superForm } from 'sveltekit-superforms/client'
-	import { SlideToggle } from '@skeletonlabs/skeleton'
-	import type { Validation } from 'sveltekit-superforms/index'
-	import type { AnyZodObject } from 'zod'
-	import Editor from '$lib/components/editor.svelte'
+	import { superForm } from 'sveltekit-superforms/client';
+	import { SlideToggle } from '@skeletonlabs/skeleton';
+	import type { Validation } from 'sveltekit-superforms/index';
+	import type { AnyZodObject } from 'zod';
+	import Editor from '$lib/components/editor.svelte';
 
-	export let data: string | Validation<AnyZodObject> | null | undefined
+	export let data: string | Validation<AnyZodObject> | null | undefined;
 
-	const { form, errors, constraints, enhance } = superForm(data)
-	let isDraft: boolean = $form.published
+	const { form, errors, constraints, enhance } = superForm(data);
+	let isDraft: boolean = $form.published;
 </script>
 
 <div class="card mt-8 p-8">
@@ -70,9 +70,7 @@
 		</div>
 
 		<div>
-			<SlideToggle name="published" bind:checked={isDraft}>
-				Published
-			</SlideToggle>
+			<SlideToggle name="published" bind:checked={isDraft}>Published</SlideToggle>
 		</div>
 
 		<button class="btn variant-filled" type="submit">Submit</button>

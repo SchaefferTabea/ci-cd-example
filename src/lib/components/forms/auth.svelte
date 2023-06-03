@@ -1,11 +1,11 @@
 <script lang="ts">
-	import { superForm } from 'sveltekit-superforms/client'
-	import type { Validation } from 'sveltekit-superforms/index'
-	import type { AnyZodObject } from 'zod'
+	import { superForm } from 'sveltekit-superforms/client';
+	import type { Validation } from 'sveltekit-superforms/index';
+	import type { AnyZodObject } from 'zod';
 
-	export let data: string | Validation<AnyZodObject> | null | undefined
+	export let data: string | Validation<AnyZodObject> | null | undefined;
 
-	const { form, errors, constraints, enhance } = superForm(data)
+	const { form, errors, constraints, enhance } = superForm(data);
 </script>
 
 <div class="card mt-8 p-8">

@@ -1,9 +1,9 @@
-import { z } from 'zod'
+import { z } from 'zod';
 
 export const authSchema = z.object({
 	username: z.string(),
 	password: z.string(),
-})
+});
 
 export const postSchema = z.object({
 	title: z.string().nonempty({ message: 'Missing title' }),
@@ -11,4 +11,4 @@ export const postSchema = z.object({
 	description: z.string().nonempty({ message: 'Missing descripton' }),
 	markdown: z.string().nonempty({ message: 'Missing Markdown' }),
 	published: z.boolean(),
-})
+});

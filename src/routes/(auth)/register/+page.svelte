@@ -1,7 +1,7 @@
 <script lang="ts">
-	import AuthForm from '$lib/components/forms/auth.svelte'
+	import AuthForm from '$lib/components/forms/auth.svelte';
 
-	export let data
+	export let data;
 </script>
 
 <div class="mx-auto mt-32 max-w-sm">

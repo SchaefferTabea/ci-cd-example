@@ -1,15 +1,15 @@
-import db from '$lib/server/database'
-import { error } from '@sveltejs/kit'
+import db from '$lib/server/database';
+import { error } from '@sveltejs/kit';
 
 // should use Prisma to get subset of types but I'm lazy
 type Post = {
-	html: string
-	title: string
-	slug: string
-	description: string
-	markdown: string
-	published: boolean
-}
+	html: string;
+	title: string;
+	slug: string;
+	description: string;
+	markdown: string;
+	published: boolean;
+};
 
 export async function getPosts() {
 	return await db.post.findMany({
@@ -20,7 +20,7 @@ export async function getPosts() {
 			published: true,
 		},
 		orderBy: { createdAt: 'desc' },
-	})
+	});
 }
 
 export async function getPublishedPosts() {
@@ -34,7 +34,7 @@ export async function getPublishedPosts() {
 		},
 		orderBy: { createdAt: 'desc' },
 		take: 10,
-	})
+	});
 }
 
 export async function getPost(slug: string) {
@@ -48,26 +48,26 @@ export async function getPost(slug: string) {
 			html: true,
 			published: true,
 		},
-	})
+	});
 
 	if (!post) {
-		throw error(400, `Could not find “${slug}”`)
+		throw error(400, `Could not find “${slug}”`);
 	}
 
-	return post
+	return post;
 }
 
 export async function createPost(data: Post) {
-	await db.post.create({ data })
+	await db.post.create({ data });
 }
 
 export async function updatePost(slug: string, data: Post) {
 	return await db.post.update({
 		where: { slug },
 		data,
-	})
+	});
 }
 
 export async function deletePost(slug: string) {
-	await db.post.delete({ where: { slug } })
+	await db.post.delete({ where: { slug } });
 }
