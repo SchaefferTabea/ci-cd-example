@@ -46,7 +46,7 @@
 		"zod": "^3.21.4"
 	},
 	"dependencies": {
-		"@lucia-auth/adapter-prisma": "^0.7.0",
+		"@lucia-auth/adapter-prisma": "^2.0.0",
 		"@lucia-auth/sveltekit": "^0.6.10",
 		"@prisma/client": "^4.11.0",
 		"@toast-ui/editor": "^3.2.2",
